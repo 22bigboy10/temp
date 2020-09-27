@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sign-in</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+	 <link rel="stylesheet" href="../css/style-sign-in.css">
+</head>
+<body>
+	<main>
+		<div class="container">
+			<div class="signin-content">
+				<div class="signin-form">
+					<a href="index.html" class="back-to-store">
+						<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 172 172" style=" fill:#111111;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path d="M110.725,154.08333l11.10833,-11.10833l-56.975,-56.975l56.975,-56.975l-11.10833,-11.10833l-67.725,68.08333z"></path></g></g></svg>
+					</a>
+					<h2>Sign in</h2>
+					<form action="">
+						<div class="sign-in-username login">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  								<path fill-rule="evenodd" d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+							</svg>
+							<input class="form-control" type="text" placeholder="Your name">
+						</div>
+						<div class="sign-in-password login">
+							<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-lock-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M2.5 9a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-7a2 2 0 0 1-2-2V9z"/>
+								<path fill-rule="evenodd" d="M4.5 4a3.5 3.5 0 1 1 7 0v3h-1V4a2.5 2.5 0 0 0-5 0v3h-1V4z"/>
+							</svg>
+							<input type="password" class="form-control" placeholder="Password">
+						</div>
+						<div class="check-box">
+							<input type="checkbox" id="remember-me">
+							<label for="input">Remember me</label>
+						</div>
+						<button onclick="check(); return false" class="submit" type="submit">Log in</button>
+					</form>
+					<div class="social-signin">
+						<div><p>Or log in with: </p></div>
+						<div class="box-icon"><a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="" class="social-icon"></a></div>
+						<div class="box-icon"><a href="https://www.google.com/"><img src="../img/google.png" alt="" class="social-icon"></a></div>
+						<div class="box-icon"><a href="https://www.twitter.com/"><img src="../img/twitter.png" alt="" class="social-icon"></a></div>
+					</div>
+				</div>
+				<div class="signin-image">
+						<img src="../img/signin-image.jpg" alt="">
+						<div class="create-account">
+							<a href="./sign-up.html">Create an account</a>
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<script src="../js/sign-in.js"></script>
+</body>
+</html>

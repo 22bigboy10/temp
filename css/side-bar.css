@@ -1,0 +1,62 @@
+.side-bar {
+	/*display: none;*/
+	position: sticky;
+	top: 0;
+	width: 300px;
+	height: 98vh;
+	padding-left: 10px;
+	overflow: auto;
+    white-space: nowrap;
+}
+
+.logo img {
+	width: 200px;
+	padding: 5px 5px;
+}
+
+.menu-bar a {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	font-weight: 500;
+	color: #696969;
+	width: 200px;
+	height: 30px;
+	padding: 5px 0;
+	padding-left: 2px;
+	margin-left: 10px;
+	border-radius: 2px;
+}
+
+.menu-bar a.dropdown{
+	justify-content: space-between;
+}
+.menu-bar .dropdown svg {
+	margin-right: 5px;
+	transition: 0.5s;
+}
+
+.menu-bar .type-of-jeans {
+	display: none;
+}
+
+.menu-bar .type-of-jeans a{
+	display: block;
+	margin-left: 30px;
+	width: 200px;
+	height: 30px;
+}
+
+.menu-bar a:hover {
+	background: #d6d6d6;
+	color: #333;
+}
+
+.menu-bar .for-us {
+	margin-top: 50px;
+}
+
+.menu-bar .for-us a {
+	font-weight: 300;
+}
+

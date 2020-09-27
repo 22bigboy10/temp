@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	background: #f8f8f8;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+/*	height: 100vh;*/
+padding: 50px;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+a {
+	color: #333;
+}
+
+.signin-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 700px;
+	max-width: 80vw;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px;
+	background: #fff;
+	border: solid #f1f1f1 1px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 2px 2px #f1f1f1;
+}
+
+.signin-content .signin-form {
+	position: relative;
+	min-width: 300px;
+	min-height: 425px;
+	padding-right: 50px;
+}
+
+.signin-content .signin-form .back-to-store {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40px;
+	height: 40px;
+	border: none;
+	background: royalblue;
+	border-radius: 20%;
+	outline: none;
+}
+
+.signin-form .login {
+	border-bottom: solid #333 1px;
+}
+
+.signin-form .invalid-feedback {
+	display: none;
+	font-weight: 300;
+	font-size: 12px;
+	color: red;
+}
+
+.signin-form .form-control {
+	height: 30px;
+	min-width: 300px;
+	max-width: 80%;
+	line-height: 20px;		
+	padding: 2px 10px;
+	margin-top: 10px;
+	border: none;
+	outline: 0;
+}
+
+.signin-image {
+	height: auto;
+	min-width: 300px;
+	max-width: 80%;
+}
+
+.signin-image .create-account {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.bi {
+	vertical-align: middle;
+}
+
+.check-box {
+	display: flex;
+	justify-content: right;
+	font-size: 15px;
+	align-items: center;	
+	margin-top: 20px;
+}
+
+.check-box input {
+	width: 15px;
+	height: 15px;
+	border: solid #f1f1f1 1px;
+	background-color: red;
+}
+
+.submit {
+	color: #fff;
+	background: #6dabe4;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 15px 39px;
+	border: none;
+	outline: 0;
+	border-radius: 5px;
+}
+.submit:hover {
+	background: #40a3e3;
+}
+
+.social-icon {
+	width: 28px;
+	height: 28px;
+	border-radius: 5px;
+}
+
+
+.social-signin {
+	margin-top: 65px;
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	height: 50px;
+}
+
+.social-signin .box-icon {
+	width: 35px;
+	margin-left: 10px;
+}
+
+.social-signin .box-icon img:hover {
+	width: 32px;
+	height: 32px;
+	transition: 0.6s;
+}

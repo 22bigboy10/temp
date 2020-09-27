@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My store</title>
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/side-bar.css">
+	<link rel="stylesheet" href="../css/header.css">
+	<link rel="stylesheet" href="../css/slide-img.css">
+	<link rel="stylesheet" href="../css/show-clothes.css">
+	<link rel="stylesheet" href="../css/contact.css">
+	<link rel="stylesheet" href="../css/bought-list.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<img src="../">
+	<div class="container">
+		<div class="side-bar">
+			<div class="logo"><a href="index.html"><img src="../img/store-logo.jpg" alt="have a picture here"></a></div>
+			<div class="menu-bar">
+				<a id="Shirts" href="#">Shirts</a>
+				<a id="Dresses" href="#">Dresses</a>
+				<a id="Jeans" href="#" class="dropdown">Jeans <svg class="dropdown-arrow" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+ 				<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+				</svg></a>
+				<div class="type-of-jeans">
+					<a href="#">Skinny</a>
+					<a href="#">Relaxed</a>
+					<a href="#">Bootcut</a>
+					<a href="#">Straight</a>
+				</div>
+				<a id="Jackets" href="#">Jackets</a>
+				<a id="Gymwear" href="#">Gymwear</a>
+				<a id="Blazers" href="#">Blazers</a>
+				<a id="Shoes" href="#">Shoes</a>
+				<div class="for-us">		
+					<a href="#">Contact</a>
+					<a href="#">Newsletter</a>
+					<a href="#">Subscribe</a>
+				</div>
+			</div>		
+		</div>
+
+		<main>
+			<div class="header">
+				<div class="header-child">
+					<h1 id="costume-type">Home</h1>
+				</div>
+				<div class="header-icon-right header-child">
+					<div id="login-logout">
+						<a class="lognin" href="sign-in.html">Login</a>
+						<a href="index.html" class="logout">Logout</a>
+					</div>
+					<div class="bought-list">
+						<div class="count-bought-list"></div>
+						<svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+					  </svg>
+					</div>
+					<div class="search">
+						<svg class="search-icon" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	 						 <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+	 						 <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+						</svg>
+						<div class="search-enter-value">
+							<div class="search-enter-value-child">
+								<input class="search-child search-bar" type="text" placeholder="Search" onchange="filterItem()">
+								<input onclick="hideSearchBar()" class = "search-child close-search-bar" type="button" value="X">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="transmission-image">
+				<h2>New arrivals</h2>
+				<h3>COLLECTION 2016</h3>
+				<a class="shop-now" href="#clothes"><button class="link-button">SHOP NOW</button></a>
+				<div class="button-zone">
+					<button onclick="transmission(); return false" class="next">
+						<svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-compact-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  							<path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+						</svg>
+					</button>
+				</div>
+			</div>
+			<div class="n-item">items</div>
+			<div id="clothes">
+				<div class="items jeans">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GW0GLDG8BY9_S9001_0.jpg" alt="here">
+							<button id="img-button-0" class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+
+						</div>
+						<div class="item-name">
+							<p>Ripped Skinny Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>13</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CDG8BY4_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Mega Ripped Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CDG8BY4_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Mega Ripped Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CDG8BY4_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Mega Ripped Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CDG8BY4_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Mega Ripped Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CZG8BY5_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Mega Ripped Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07LDG8BY8_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Washed Skinny Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/item-img/GY07CZG8BF1_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Vintage Skinny Jeans</p>
+						</div>
+						<div class="price">
+							<h3>$<span>39</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="items dresses">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6I2LTFSA0A_HN1RB_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6I2ZTGDU54_HF1QG_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6I3NTHJMK4_S8350_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6I2RTGDU81_S9363_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6I2WTFSEHO_HN1RB_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6J4QTFUGKF_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6J8STGDV90_S9428_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/dresses/F6K3BTFURDV_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Dresses name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="items shirts">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5I11TFJ1IB_W0001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id); return false">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5M51TFU1UQ_V7347_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5M65TGDU46_HN1MH_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5M70TGDV28_S9383_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5N12TGDV25_S9380_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5N27TIS1DK_HN1RA_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5N79TFI12F_HF2LP_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shirts/F5N80TFJ1IC_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shirts name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="items jackets">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9OH7DG8BW7_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9OQ9THUMEQ_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9PY2ZG7XOI_S9000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9QP6TFU2XZ_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9QR0ZG7WCT_HY13M_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9RB4LHULF7_M0450_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9RG0DG8BU3_S9001_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/jacket/G9SV0LHULF9_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Jackets name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="items gymwear">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/dri-fit-t-shirts-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/kids-tracksuit-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/ladies-tracksuit-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/mens-sports-t-shirt-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/mens-track-pants-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/polo-t-shirt-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/school-tracksuit-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/gymwear/track-pant-125x125.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Gymwear name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+				</div>
+
+				<div class="items blazers">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F26AOTHUMJZ_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F28VRTFURJL_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29EFTHJMK6_S8351_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29FITFU1L5_B0076_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29FLTGDU49_HD1RM_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29FVTFU1L5_VA336_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29FVTFU1L5_VA336_0.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/blazers/F29FXTHUMJK_N0000_0.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Blazers name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>		
+				</div>
+
+				<div class="items shoes">
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/A20127A3444_80001_1.jpg" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/A20127A3444_80999_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/CS1558AS842_89697_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/CS1558B5541_HWF57_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/CS1558B5811_80995_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/CS1735A8L37_80001_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+					<div class="item-child">
+						<div class="item-child-img">
+							<img src="../img/shoes/CS1735A8L37_8H665_1.webp" alt="">
+							<button class="buy-now-button" onclick="addToList();reply_id(this.id)">Buy now <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+	  							<path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+								</svg>
+							</button>
+						</div>
+						<div class="item-name">
+							<p>Shoes name</p>
+						</div>
+						<div class="price">
+							<h3>$<span>19</span></h3>
+						</div>
+					</div>
+				</div>
+				
+				<!-- <div class="see-more"><button>More ...</button></div> -->
+			</div>
+
+			<div class="subscribe">
+				<h4>Subscribe</h4>
+				<p>To get special offers and VIP treament</p>
+				<input type="email" placeholder="Enter e-mail">
+				<button>Subscribe</button>
+			</div>
+
+			<div class="feedback">
+				<div class="contact">
+					<h5>Contact</h5>
+					<p>question? Go ahead.</p>
+					<form action="">
+						<input class="customer-contact" type="text" placeholder="Name">
+						<input class="customer-contact" type="text" placeholder="Email">
+						<input class="customer-contact" type="text" placeholder="Subject">
+						<input class="customer-contact" type="text" placeholder="Message">
+						<button>Send</button>
+					</form>
+				</div>
+
+				<div class="about-us">
+					<h5>About us</h5>
+					<a href="#">About us</a>
+					<a href="#">We're hiring</a>
+					<a href="#">Support</a>
+					<a href="#">Find store</a>
+					<a href="#">Shipment</a>
+					<a href="#">Gift card</a>
+					<a href="#">Return</a>
+					<a href="#">Help</a>
+				</div>
+
+				<div class="about-store">
+					<h5>Store</h5>
+					<ul>
+						<li>Company name</li>
+						<li>0044236847</li>
+						<li>mystore@gmail.com</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="search-result-background">
+				<div class="search-result" onchange="addingId()">
+				</div>
+			</div>
+			
+			<footer>
+				<p>Powered by <a href="#">w3.css</a></p>
+			</footer>
+		</main>
+	</div>
+	<div class="bought-list-border">
+		<div class="bought-list-container">
+			<div class="manage-bought-list">
+			</div>
+			<div class="payment">
+				<div class="total-amount">
+					<div class="total-amount__top">
+						<p>Price: <span id="md3"></span>$</p>
+					</div>
+					<div class="total-amount__bottom">
+						<p>Total amount: <span id="md4"></span>$</p>	
+					</div>
+				</div>
+				<div class="enter-vocher">
+					<div class="title">Enter code</div>
+					<div class="input-value">
+						<input type="text" placeholder="Enter code here" class="enter-discount">
+						<button class="cofirm-code" onclick="cofirmDiscount()">OK</button>
+					</div>
+				</div>
+				<button class="cofirm-price cofirm-button" onclick = "javascript:alert('Congratulation!')">Buy now</button>
+				<button class="main-store cofirm-button" onclick="mainStore()">Buy more</button>
+			</div>
+		</div>
+	</div>
+	<script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+.subscribe {
+	height: 250px;
+	padding-top: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-top: 30px;
+	color: #fff;
+	background: #111;
+}
+
+.subscribe h4 {
+	font-size: 40px;
+}
+
+.subscribe p {
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.subscribe input {
+	width: 98%;
+	line-height: 24px;
+	padding: 5px 5px;
+}
+
+.subscribe button {
+	margin-top: 10px;
+	font-size: 20px;
+	padding: 10px 20px;
+	background: rgba(253, 42, 42, 0.795);
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+}
+
+.subscribe button:hover {
+	background: #d0d0d0;
+	color: #333;
+}
+
+.feedback {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 100px;
+	padding-top: 50px;
+}
+
+.feedback h5 {
+	font-weight: 100;
+	font-size: 30px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+.feedback .contact .customer-contact {
+	display: block;
+	width: 250px;
+	line-height: 20px;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.feedback .contact button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	top: 10px;
+	width: 264px;
+	line-height: 20px;
+	padding: 10px;
+	border: none;
+	background: #111;
+	color: #fff;
+}
+
+.feedback .contact button:hover {
+	background: #d0d0d0;
+	color: #333;
+}
+
+.feedback .about-us {
+	text-align: center;
+}
+
+.feedback .about-us a {
+	color: #333;
+	text-decoration: underline;
+	display: block;
+	margin-bottom: 10px;
+}

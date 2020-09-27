@@ -1,0 +1,72 @@
+
+#clothes {
+	position: relative;
+	width: 100%;
+	height: 615px;
+	overflow: auto;
+	white-space: 200px;
+
+}
+
+.n-item {
+	font-weight: 100;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.items {
+	display: grid;
+	grid-template-columns:  21% 21% 21% 21%;
+	justify-content: space-between;
+}
+
+.item-child {
+	width: 100%;
+	height: 300px;
+	margin-bottom: 10px;
+}
+
+.item-child .item-name p {
+	margin: 5px 0;
+}
+
+
+.item-child .price h3 {
+	font-weight: 400;
+}
+
+.item-child .item-child-img {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 250px;
+}
+
+.item-child .item-child-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.buy-now-button {
+	display: none;
+	position: absolute;
+	border: none;
+	outline: 0;
+	padding: 7px 15px;
+	background: #111;
+	color: #fff;
+}
+
+
+
+.item-child-img:hover .buy-now-button {
+	display: block;
+}
+
+.item-child-img:hover .buy-now-button:hover {
+	background: #d0d0d0;
+	color: #333;
+}
